@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
+import CtoButton from '../components/cto_button';
 
 interface LandingPageProps {
     
@@ -23,12 +24,16 @@ class LandingPage extends Component {
                         <div className='w-1/2 flex justify-center text-center uppercase text-8xl font-bigfont mt-16 select-none'>Your goals are our mission.</div>
                     </div>
 
+                    <div className='flex w-full justify-center mt-16'>
+                        <CtoButton text = {'Get Accountable'} action = {() => {window.location.href = '/login'}}/>
+                    </div>
+
                 </div>
             </div>
         )
     }
 
-    
+
     MidSlot() {
         return (
             <div className='h-64 w-full'>
