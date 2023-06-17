@@ -18,7 +18,7 @@ class CtoButton extends Component<ButtonProps> {
 
         return(
             <div className="bg-black hover:pr-1 hover:pb-1 rounded-full cursor-pointer transition duration-150">
-                <div className="rounded-full uppercase bg-[#54d4a6] p-4 font-smallfont font-bold"
+                <div className="rounded-full uppercase bg-[#54d4a6] p-4 font-smallfont font-bold text-center"
                 onClick = {action}>{text}</div>
             </div>
         )

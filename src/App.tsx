@@ -1,10 +1,10 @@
 import {
   createBrowserRouter,
-  Router,
   RouterProvider,
 } from "react-router-dom";
 
-import LandingPage from "./pages/landing"
+import LandingPage from "./pages/landing";
+import LoginPage from "./pages/login";
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
     },
     {
       path: '/login',
-      element: <LandingPage />
+      element: <LoginPage />
     },
   ]);
 

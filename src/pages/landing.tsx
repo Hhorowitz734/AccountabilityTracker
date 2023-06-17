@@ -17,7 +17,7 @@ class LandingPage extends Component {
                 <div className='h-5/6 w-full border-b rounded-b-3xl bg-white'>
 
                     <div className='py-1 px-4'>
-                        <div className='text-3xl font-smallfont font-semibold'>Goalie</div>
+                        <div className='text-3xl font-smallfont font-semibold cursor-pointer'>Goalie</div>
                     </div>
 
                     <div className='flex w-full justify-center'>
