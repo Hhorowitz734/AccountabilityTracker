@@ -1,5 +1,7 @@
 import { Component } from 'react';
+
 import CtoButton from '../components/cto_button';
+import Navbar from '../components/navbar';
 
 interface LandingPageProps {
     
@@ -16,9 +18,7 @@ class LandingPage extends Component {
             <div className='h-screen px-2'>
                 <div className='h-5/6 w-full border-b rounded-b-3xl bg-white'>
 
-                    <div className='py-1 px-4'>
-                        <div className='text-3xl font-smallfont font-semibold cursor-pointer'>Goalie</div>
-                    </div>
+                    <Navbar main_page='' />
 
                     <div className='flex w-full justify-center'>
                         <div className='w-1/2 flex justify-center text-center uppercase text-8xl font-bigfont mt-16 select-none'>Your goals are our mission.</div>
