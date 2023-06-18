@@ -21,7 +21,7 @@ const AuthRoute: React.FunctionComponent<IAuthRouteProps> = props => {
             setLoading(false);
         } else {
             console.error('Unauthorized. [THIS IS A DEV-GENERATED MESSAGE]');
-            //window.location.href = '/login';
+            window.location.href = '/login';
         }
     });
 

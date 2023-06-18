@@ -47,6 +47,7 @@ class LoginPage extends Component<LoginPageProps, LoginPageState>{
         .then((userCredential) => {
             const user = userCredential.user;
             console.log('user created: ', user)
+            window.location.href = '/goals';
         })
         .catch((error) => {
             console.log('error: ', error);
@@ -58,7 +59,9 @@ class LoginPage extends Component<LoginPageProps, LoginPageState>{
         const {email, password} = this.state;
         signInWithEmailAndPassword(this.auth, email, password)
         
-        .then(() => {
+        .then((userCredential) => {
+            const user = userCredential.user;
+            console.log('user created: ', user)
             window.location.href = '/goals';
         })
         .catch((error) => {
@@ -74,7 +77,7 @@ class LoginPage extends Component<LoginPageProps, LoginPageState>{
 
         .then(response => {
             console.log(response.user.uid);
-            window.location.href = '/';
+            window.location.href = '/goals';
 
         }).catch(error => {
             console.log(error);
@@ -143,7 +146,7 @@ class LoginPage extends Component<LoginPageProps, LoginPageState>{
                             </div>
                         </div>
                         <div className='text-lg font-smallfont font-bold ml-4 mt-4 hover:underline cursor-pointer'
-                        onClick = {() => {this.setState({register : !register})}}>Don't have an account?</div>
+                        onClick = {() => {this.setState({register : !register})}}>{register ? 'Have an account?' : "Don't have an account?"}</div>
                    </div>
                 </div>
             </div>
