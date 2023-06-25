@@ -5,6 +5,8 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ main_page }) => {
+
+  console.log('here')
   return (
         <div className='py-1 px-4'>
             <div className='text-3xl font-smallfont font-semibold cursor-pointer'

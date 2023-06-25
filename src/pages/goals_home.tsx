@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Navbar from "../components/navbar";
+import { AiOutlineCheckCircle, AiOutlineCloseCircle } from 'react-icons/ai';
 
 interface GoalsHomePage {
   imageUrl: string;
@@ -20,7 +21,7 @@ class GoalsHomePage extends Component<GoalsHomePageProps, GoalsPageStates> {
         super(props);
 
         //Temporary style for sample pfp
-        this.imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Outdoors-man-portrait_%28cropped%29.jpg/1200px-Outdoors-man-portrait_%28cropped%29.jpg';
+        this.imageUrl = 'https://media-cldnry.s-nbcnews.com/image/upload/newscms/2021_10/3447876/210205-jacob-chansley-mc-1142.JPG';
         this.divStyle = {
           backgroundImage: `url(${this.imageUrl})`,
         }
@@ -51,13 +52,22 @@ class GoalsHomePage extends Component<GoalsHomePageProps, GoalsPageStates> {
             <div className="rounded-3xl bg-[#E1D12B] h-full w-full pl-2 pt-2 transition duration-150">
               <div className="text-8xl w-full pt-16 pl-10 font-bigfont">Watch the goal!</div>
               <div className="rounded-3xl bg-white w-11/12 h-48 mx-auto my-16 p-4">
-                <div className="flex items-center"><h1 className="font-smallfont text-2xl font-bold">Read "Convinience Store Woman"</h1><h1 className="font-smallfont ml-auto text-2xl font-bold text-red-500">August 14</h1></div>
-                <div className="flex items-center rounded-lg bg-gray-400 py-2 px-1">
-                  <div className="w-10 h-10 rounded-full bg-cover" style={this.divStyle}></div>
-                  <h1 className="text-xl font-smallfont font-bold ml-4">Zubayer Jones</h1>
-                  <div className="ml-auto font-smallfont">NOT COMPLETE</div>
-                  <div className="ml-auto font-smallfont bg-[#E1D12B] px-2 py-1 rounded-lg">Remind</div>
-                </div>
+                <div className="flex items-center border-transparent border-b border-b-gray-400 pb-1"><h1 className="font-smallfont text-3xl font-bold">Take a huge shit on Nancy Pelosi's Desk</h1><div className="h-full bg-green-200 hover:bg-green-400 transition duration-150 p-2 rounded-full ml-2 text-2xl"><AiOutlineCheckCircle /></div></div>
+                    
+                  <div className="flex">
+                    <div className="flex items-center rounded-lg w-1/2 mr-1 h-12 mt-2 bg-red-300 hover:bg-red-400 transition duration-150 mr-auto px-2">
+                      <div className="w-10 h-10 rounded-full bg-cover" style={this.divStyle}></div>
+                      <h1 className="text-2xl font-smallfont font-bold ml-2">Donald</h1>
+                      <h1 className="text-2xl rounded-full ml-auto"><AiOutlineCloseCircle /></h1>
+                    </div>
+                    <div className="flex items-center rounded-lg w-1/2 mr-1 h-12 mt-2 bg-red-300 hover:bg-red-400 transition duration-150 mr-auto px-2">
+                      <div className="w-10 h-10 rounded-full bg-cover" style={this.divStyle}></div>
+                      <h1 className="text-2xl font-smallfont font-bold ml-2">Alvin</h1>
+                      <h1 className="text-2xl rounded-full ml-auto"><AiOutlineCloseCircle /></h1>
+                    </div>
+                  </div>
+                  <h1 className="font-smallfont ml-auto text-2xl font-bold text-black text-center mt-2">January 6</h1>
+
               </div>
             </div>
           </div>
