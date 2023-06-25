@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface NavbarProps {
-    main_page: 'goals' | '';
+    main_page: 'goals' | ''; //Can be 'goals' if user is logged in, or '' to send them to the landing page if they aren't   
 }
 
 const Navbar: React.FC<NavbarProps> = ({ main_page }) => {
